@@ -21,21 +21,21 @@
 # SOFTWARE.
 #
 
-.PHONY: connect_TUv1 same_source clean distclean
+.PHONY: connect_TUv1_example1 same_source_example2 clean distclean
 
 all:
-	make -C connect_TUv1
-	make -C same_source
+	make -C connect_TUv1_example1
+	make -C same_source_example2
 
-connect_TUv1:
-	make -C connect_TUv1
+connect_TUv1_example1:
+	make -C connect_TUv1_example1
 
-same_source:
-	make -C same_source
+same_source_example2:
+	make -C same_source_example2
 
 clean:
-	make -C connect_TUv1 clean
-	make -C same_source clean
+	make -C connect_TUv1_example1 clean
+	make -C same_source_example2 clean
 
 distclean:
 	make clean
